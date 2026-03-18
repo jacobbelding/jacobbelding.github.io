@@ -1,0 +1,392 @@
+/*
+ * CV Overrides — jacobbelding.com
+ * Loaded after assets/css/main.css to restyle the HTML5 UP "Read Only"
+ * template into a clean, professional web CV.
+ */
+
+/* ── Typography ───────────────────────────────────────── */
+
+body, input, select, textarea {
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	color: #333;
+	line-height: 1.65;
+	letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	color: #1a1a2e;
+	letter-spacing: -0.02em;
+}
+
+a {
+	color: #457b9d;
+	transition: color 0.2s ease;
+}
+
+a:hover {
+	color: #1d3557;
+}
+
+/* ── Sidebar / Header ─────────────────────────────────── */
+
+#header {
+	background: #1d3557;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
+	color: #fff;
+}
+
+#header header p {
+	color: rgba(255, 255, 255, 0.65);
+	font-style: normal;
+	font-size: 0.85em;
+	line-height: 1.5;
+}
+
+#header a {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+#header a:hover {
+	color: #fff !important;
+}
+
+#header > header .avatar {
+	width: 9em;
+	margin-bottom: 1.5em;
+}
+
+#header > header .avatar img {
+	border-radius: 50%;
+}
+
+#header > header h1 {
+	font-size: 1.6em;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+
+/* Nav */
+
+#header > nav ul li {
+	border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+#header > nav ul li a {
+	color: rgba(255, 255, 255, 0.8) !important;
+	font-size: 0.85em;
+	font-weight: 500;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	padding: 0.7em 0;
+}
+
+#header > nav ul li a.active {
+	background: rgba(255, 255, 255, 0.1);
+	color: #fff !important;
+}
+
+#header > nav ul li a:hover {
+	background: rgba(255, 255, 255, 0.05);
+}
+
+/* Social icons */
+
+#header > footer .icons li a {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+#header > footer .icons li a:hover {
+	color: #fff !important;
+}
+
+/* Download CV button in sidebar */
+
+.sidebar-download {
+	display: block;
+	margin: 1.25em 2em;
+	padding: 0.6em 1em;
+	background: rgba(255, 255, 255, 0.12);
+	color: #fff !important;
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	border-radius: 4px;
+	text-align: center;
+	font-size: 0.85em;
+	font-weight: 600;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.sidebar-download:hover {
+	background: rgba(255, 255, 255, 0.2);
+	border-color: rgba(255, 255, 255, 0.4);
+	color: #fff !important;
+}
+
+.sidebar-download .fa,
+.sidebar-download .fas {
+	margin-right: 0.4em;
+}
+
+/* ── Page Titles / Major Headers ───────────────────────── */
+
+header.major h2 {
+	color: #1d3557;
+}
+
+header.major h2 + p {
+	color: #555;
+}
+
+/* ── Main Content ─────────────────────────────────────── */
+
+#main > section {
+	border-top: 1px solid #eaeaea;
+}
+
+#main > section:first-child {
+	border-top: 0;
+}
+
+#main > section > .container {
+	padding: 3.5em 0 2.5em 0;
+}
+
+/* Section headings */
+
+#main h3 {
+	font-size: 1.3em;
+	font-weight: 700;
+	color: #1d3557;
+	margin-bottom: 1.25em;
+	padding-bottom: 0.4em;
+	border-bottom: 2px solid #457b9d;
+	display: inline-block;
+}
+
+/* ── CV Entry Component ───────────────────────────────── */
+
+.cv-entry {
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+.cv-entry:last-child {
+	border-bottom: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.cv-entry-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 0.5em;
+}
+
+.cv-entry h4 {
+	font-size: 1.05em;
+	font-weight: 700;
+	color: #1a1a2e;
+	margin: 0;
+}
+
+.cv-entry .cv-org {
+	font-weight: 600;
+	color: #457b9d;
+	font-size: 0.95em;
+}
+
+.cv-entry .cv-dates {
+	font-size: 0.85em;
+	color: #888;
+	white-space: nowrap;
+}
+
+.cv-entry .cv-description {
+	margin-top: 0.3em;
+	font-size: 0.92em;
+	color: #555;
+	line-height: 1.5;
+}
+
+.cv-entry .cv-subtitle {
+	font-size: 0.88em;
+	color: #666;
+	font-style: italic;
+	margin-top: 0.15em;
+}
+
+/* ── Awards List ──────────────────────────────────────── */
+
+.awards-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.awards-list li {
+	padding: 0.5em 0;
+	border-bottom: 1px solid #f0f0f0;
+	font-size: 0.95em;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 0.25em;
+}
+
+.awards-list li:last-child {
+	border-bottom: 0;
+}
+
+.awards-list .award-name {
+	font-weight: 600;
+	color: #1a1a2e;
+}
+
+.awards-list .award-year {
+	font-size: 0.85em;
+	color: #888;
+}
+
+.awards-list .award-detail {
+	width: 100%;
+	font-size: 0.88em;
+	color: #666;
+}
+
+/* ── Service List ─────────────────────────────────────── */
+
+.service-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.service-list li {
+	padding: 0.4em 0;
+	font-size: 0.95em;
+	color: #444;
+}
+
+.service-list li strong {
+	color: #1a1a2e;
+}
+
+/* ── About / Intro ────────────────────────────────────── */
+
+.intro-text {
+	font-size: 1.05em;
+	line-height: 1.7;
+	color: #444;
+	max-width: 38em;
+}
+
+.download-btn {
+	display: inline-block;
+	margin-top: 1.25em;
+	padding: 0.65em 1.5em;
+	background: #1d3557;
+	color: #fff !important;
+	border-radius: 4px;
+	font-size: 0.9em;
+	font-weight: 600;
+	text-decoration: none;
+	letter-spacing: 0.02em;
+	transition: background 0.2s ease;
+}
+
+.download-btn:hover {
+	background: #457b9d;
+	color: #fff !important;
+}
+
+.download-btn .fa,
+.download-btn .fas {
+	margin-right: 0.4em;
+}
+
+/* ── Contact Section ──────────────────────────────────── */
+
+.contact-links {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.contact-links li {
+	padding: 0.5em 0;
+	font-size: 1em;
+}
+
+.contact-links li .fas,
+.contact-links li .fab {
+	width: 1.5em;
+	color: #457b9d;
+	margin-right: 0.5em;
+}
+
+/* ── Footer ───────────────────────────────────────────── */
+
+#footer {
+	background: #fafafa;
+}
+
+/* ── Mobile Title Bar Override ────────────────────────── */
+
+#titleBar {
+	background: #1d3557;
+}
+
+#titleBar .toggle:before {
+	background: #457b9d;
+}
+
+/* ── Responsive Adjustments ───────────────────────────── */
+
+@media screen and (max-width: 1680px) {
+	#main > section > .container {
+		padding: 3em 0 2em 0;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#main > section > .container {
+		padding: 2.5em 0 1.5em 0;
+	}
+
+	.cv-entry-header {
+		flex-direction: column;
+		gap: 0.15em;
+	}
+
+	.cv-entry .cv-dates {
+		font-size: 0.82em;
+	}
+
+	.sidebar-download {
+		margin: 1em 1.5em;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	#main > section > .container {
+		padding: 2em 0 1em 0;
+	}
+
+	#main h3 {
+		font-size: 1.15em;
+	}
+
+	.awards-list li {
+		flex-direction: column;
+	}
+}
